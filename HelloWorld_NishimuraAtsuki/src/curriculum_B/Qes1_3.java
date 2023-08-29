@@ -19,5 +19,4 @@ public class Qes1_3 {
 			System.out.println("「半角英数字のみで名前を入力してください」");
 		}
 	}
-
 }
