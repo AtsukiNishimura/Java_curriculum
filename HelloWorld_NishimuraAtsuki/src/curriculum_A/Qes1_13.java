@@ -2,11 +2,11 @@ package curriculum_A;
 
 public class Qes1_13 {
 	public static void main(String[] args) {
+		
+		// 改行用の変数を作成する
+		String br = System.getProperty("line.separator");
 
 // 問1	
-		/**********************************************************************************
-		 * 【概要】基本型変数宣言
-		 **********************************************************************************/
 		// バイト型を宣言する
 		byte number;
 		
@@ -35,9 +35,6 @@ public class Qes1_13 {
 		boolean bool;
 		
 // 問2
-		/**********************************************************************************
-		 * 【概要】変数の初期化
-		 **********************************************************************************/
 		// バイト型を初期化する
 		number = 0;
 		
@@ -65,10 +62,7 @@ public class Qes1_13 {
 		// ブーリアン型を初期化する
 		 bool = false;
 		 
-//問3
-		/**********************************************************************************
-		* 【概要】変数に値を代入
-		**********************************************************************************/		 
+//問3 
 		// バイト型に 10を代入する
 		number = 10;
 		
@@ -97,47 +91,36 @@ public class Qes1_13 {
 		bool = true;
 		
 // 問4
-		/**********************************************************************************
-		* 【概要】コンソール出力
-		* 【詳細】作成した変数を用いて値を出力
-		**********************************************************************************/
 		// 11110 をコンソール出力する
-		System.out.println(longInt + integerNum + shortInt + number);
+		System.out.println(longInt + integerNum + shortInt + number + br);
 		
 		// 20 をコンソール出力する
-		System.out.println(number * 2);
+		System.out.println(number * 2 + br);
 		
 		// "a ハロー true" をコンソール出力する
-		System.out.println(alphabet + " " + greet + " " + bool);
+		System.out.println(alphabet + " " + greet + " " + bool + br);
 		
 		// 数字の合計を整数型に変換する
 		int sum = (int)(number + shortInt + integerNum + longInt + floatNum + doubleNum);
 		// 整数型に変換した数字の合計をコンソール出力する
-		System.out.println(sum);
+		System.out.println(sum + br);
 		
 		// バイト型、短整数型、整数型、長整数型を全てかけた値をコンソール出力する
-		System.out.println(number * shortInt * integerNum * longInt);
+		System.out.println(number * shortInt * integerNum * longInt + br);
 		
 		// 倍精度浮動小数点型を、短整数型で割った値をコンソール出力する
-		System.out.println(doubleNum / shortInt);
+		System.out.println(doubleNum / shortInt + br);
 		
 		// バイト型から短整数型を引いた値をコンソール出力する
-		System.out.println(number - shortInt);
+		System.out.println(number - shortInt + br);
 		
 // 問5
-		/**********************************************************************************
-		* 【概要】コンソール出力
-		**********************************************************************************/
 		// "ハローJAVA43"をコンソール出力する
 		int num = 20;
 		int num1 = 23;
-		System.out.println("ハローJAVA" + (num + num1));
+		System.out.println("ハローJAVA" + (num + num1) + br);
 		
 // 問6
-		/**********************************************************************************
-		* 【概要】変数の作成及び、コンソール出力
-		* 【詳細】作成した変数を用いて自己紹介文をコンソール出力
-		**********************************************************************************/
 		// 文字列型の変数を宣言し、山田太郎を代入する
 		String name = "山田太郎";
 		
@@ -154,70 +137,58 @@ public class Qes1_13 {
 		String food = "寿司";
 		
 		// 「初めまして○○です」をコンソール出力する
-		System.out.println("初めまして" + name + "です");
+		System.out.println("初めまして" + name + "です" + br);
 		
 		// 「年齢は○○歳です」をコンソール出力する
-		System.out.println("年齢は" + age + "歳です");
+		System.out.println("年齢は" + age + "歳です" + br);
 		
 		// 「身長は○○cmです」をコンソール出力する
-		System.out.println("身長は" + height + "cmです");
+		System.out.println("身長は" + height + "cmです" + br);
 		
 		// 「体重は○○kgです」をコンソール出力する
-		System.out.println("体重は" + weight + "kgです");
+		System.out.println("体重は" + weight + "kgです" + br);
 		
 		// 「好きな食べ物は○○です」をコンソール出力する
-		System.out.println("好きな食べ物は" + food + "です");
+		System.out.println("好きな食べ物は" + food + "です" + br);
 		
 // 問7
-		/**********************************************************************************
-		* 【概要】BMIの算出
-		* 【詳細】変数を用いてBMIを計算し、コンソール出力
-		**********************************************************************************/
-		// BMIの算出
+		// BMI(体重÷身長÷身長×10000）の算出
 		double bmi = weight / height / height * longInt;
 		// BMIをコンソール出力する(小数第一位まで表示)
-		System.out.println("BMIは" + String.format("%.1f", bmi) + "です");
+		System.out.println("BMIは" + String.format("%.1f", bmi) + "です" + br);
 		
 // 問8
-		/**********************************************************************************
-		* 【概要】変数の再代入
-		* 【詳細】再代入された変数を用いてコンソール出力
-		**********************************************************************************/
 		// 変数 nameに 鈴木一郎を代入する
 		name = "鈴木一郎";
 		// 「初めまして鈴木一郎です」をコンソール出力する
-		System.out.println("初めまして" + name + "です");
+		System.out.println("初めまして" + name + "です" + br);
 		
 		// 変数 ageに 24を代入する
 		age = 24;
 		//「年齢は24歳です」をコンソール出力する
-		System.out.println("年齢は" + age + "歳です");
+		System.out.println("年齢は" + age + "歳です" + br);
 		
 		// 変数 heightに 168.5を代入する
 		height = 168.5;
 		// 「身長168.5cmです」をコンソール出力する
-		System.out.println("身長は" + height + "cmです");
+		System.out.println("身長は" + height + "cmです" + br);
 		
 		// 変数 weightに 64.2を代入する
 		weight = 64.2;
 		// 「体重は64.2kgです」をコンソール出力する
-		System.out.println("体重は" + weight + "kgです");
+		System.out.println("体重は" + weight + "kgです" + br);
 		
 		// 変数 foodに オムライスを代入する
 		food = "オムライス";
 		// 「好きな食べ物はオムライスです」をコンソール出力する
-		System.out.println("好きな食べ物は" + food + "です");
+		System.out.println("好きな食べ物は" + food + "です" + br);
 		
-		// BMIの算出
+		// BMI(体重÷身長÷身長×10000）の算出
 		bmi = weight / height / height * longInt;
 		// BMIをコンソール出力する(小数第一位まで表示、文末で改行)
 		System.out.printf("BMIは%.1fです%n", bmi);
 		
 // 問9 
-		/**********************************************************************************
-		* 【概要】変数に和算で自己代入
-		* 【詳細】自己代入された変数を用いてコンソール出力
-		**********************************************************************************/
 		// 年齢を和算で自己代入する
 		age += age;
 		// 身長を和算で自己代入する
@@ -226,39 +197,32 @@ public class Qes1_13 {
 		weight += weight;
 		
 		// 「初めまして鈴木一郎です」をコンソール出力する
-		System.out.println("初めまして" + name + "です");
+		System.out.println(br + "初めまして" + name + "です" + br);
 		
 		// 変数 ageを用いて、年齢の紹介文をコンソール出力する
-		System.out.println("年齢は" + age + "歳です");
+		System.out.println("年齢は" + age + "歳です" + br);
 		
 		// 変数 heightを用いて、身長の紹介文をコンソール出力する
-		System.out.println("身長は" + height + "cmです");
+		System.out.println("身長は" + height + "cmです" + br);
 		
 		// 変数 weightを用いて、体重の紹介文をコンソール出力する
-		System.out.println("体重は" + weight + "kgです");
+		System.out.println("体重は" + weight + "kgです" + br);
 		
 		// 「好きな食べ物はオムライスです」をコンソール出力する
-		System.out.println("好きな食べ物は" + food + "です");
+		System.out.println("好きな食べ物は" + food + "です" + br);
 		
-		// BMIを自己代入で算出する
+		// BMIを自己代入で算出する(問8で算出した値を用いて算出)
 		bmi = bmi / 2;
 		// BMIをコンソール出力する(小数第一位まで表示、文末で改行)
 		System.out.printf("BMIは%.2fです%n", bmi);
 		
 // 問10
-		/**********************************************************************************
-		* 【概要】比較演算子を用いて真偽値を出力
-		**********************************************************************************/		
 		// 年齢を問8の値に戻す
 		age = 24;
 		// 年齢が 25歳以上の場合は、 trueを出力する
-		System.out.println(age >= 25);
+		System.out.println(br + (age >= 25));
 		
 // 問11
-		/**********************************************************************************
-		* 【概要】型変換した値をコンソール出力
-		* 【詳細】年齢、身長、体重を文字列に変換し、繋げて出力する
-		**********************************************************************************/
 		// 年齢を文字列型へ変換する
 		String ageStr = String.valueOf(age);
 		
@@ -273,27 +237,21 @@ public class Qes1_13 {
 		String weightStr = String.valueOf(weight);
 		
 		// 文字列型に変換した年齢と身長と体重をつなげて出力する
-		System.out.println(ageStr +  heightStr + weightStr);
+		System.out.println(br + ageStr +  heightStr + weightStr + br);
 		
 // 問12
-		/**********************************************************************************
-		* 【概要】整数型への型変換
-		**********************************************************************************/
 		// 文字列型に変換した年齢を整数型へ変換する
 		int ageInt = Integer.parseInt(ageStr);
 		// 文字列型に変換した身長を倍精度浮動小数点型型へ変換した後、整数型に変換する
 		int heightInt = (int)Double.parseDouble(heightStr);
 		
 		// 整数型に変換した年齢を出力する
-		System.out.println(ageInt);
+		System.out.println(ageInt + br);
 		
 		// 整数型に変換した身長を出力
-		System.out.println(heightInt);
+		System.out.println(heightInt + br);
 		
 // 問13
-		/**********************************************************************************
-		* 【概要】論理演算子を用いて真偽値をコンソール出力
-		**********************************************************************************/
 		// 年齢が25もしくは身長が160以上であればtrueを出力する
 		System.out.println(ageInt == 25 || heightInt >= 160);
 	}
