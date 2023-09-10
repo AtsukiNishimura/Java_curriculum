@@ -10,10 +10,10 @@ public class Qes5 {
 		System.out.println("");
 		System.out.println("");
 		// かけられる数をループさせる(9まで)
-		for(int i = 0; i < 10; i++) {
+		for(int i = 1; i < 10; i++) {
 			// かける数をループ(20まで)させ、結果を表示(数値は3桁で0埋めして表示させる)、最後に改行を入れる
 			for(int n =1; n < 21; n++) {
-				System.out.printf(String.format("%03d",i) + " * " + String.format("%03d", n) + " _ " + String.format("%03d",(i * n)) + ( n != 20 ? " || " : "\r\n" ));
+				System.out.printf(String.format("%03d",n) + " * " + String.format("%03d", i) + " = " + String.format("%03d",(i * n)) + ( n != 20 ? " || " : "\r\n" ));
 			}
 			// 改行を入れる
 			System.out.println();
