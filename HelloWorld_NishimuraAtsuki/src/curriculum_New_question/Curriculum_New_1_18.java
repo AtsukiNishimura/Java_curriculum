@@ -57,22 +57,21 @@ public class Curriculum_New_1_18 {
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
 	
-	public static double aveNum() {
-		//Q5で作成したメソッドを呼び出して返り値を受け取る
-		int [] aveArr  = intNum(5);
-		// 返り値として受け取った配列の要素の平均値を算出
-		double average = Arrays.stream(aveArr).average().getAsDouble();
+	// Q5で作成したメソッドの返り値を、呼び出し時に引数として渡す
+	public static double aveNum(int[] newArr) {
+		
+		// 受け取った配列の要素の平均値を算出
+		double average = Arrays.stream(newArr).average().getAsDouble();
 		System.out.println("平均値:" + average);
 		// 平均値を返す
 		return average;
 	}
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 	
-	public static boolean boo() {
-		// Q6で作成したメソッドを呼び出して返り値を受け取る
-		double average = aveNum();
+	// Q6で作成したメソッドの返り値を、呼び出し時に引数として渡す
+	public static boolean boo(double ave) {
 		// 受け取った値が50以上の場合の処理
-		if(average >= 50) {
+		if(ave >= 50) {
 			System.out.println("true");
 			// 真偽値を返す
 			return true;
@@ -87,45 +86,32 @@ public class Curriculum_New_1_18 {
 	public static void main(String[] args) {
     // 作成したメソッドをここで呼び出してください
 		// Q1 呼び出し
-		System.out.println("Q1----------------------------------------------------------------------");
-		System.out.println();
+		System.out.println("Q1----------------------------------------------------------------------\r\n");
 		greet("Hello JavaSE", 11);
-		System.out.println();
 		
 		// Q2 呼び出し
-		System.out.println("Q2----------------------------------------------------------------------");
-		System.out.println();
+		System.out.println("\r\nQ2----------------------------------------------------------------------\r\n");
 		multi(2,43);
-		System.out.println();
 		
 		// Q3 呼び出し
-		System.out.println("Q3----------------------------------------------------------------------");
-		System.out.println();
+		System.out.println("\r\nQ3----------------------------------------------------------------------\r\n");
 		int [] number = {1,2,5};
 		num(number);
-		System.out.println();
 		
 		// Q4 呼び出し
-		System.out.println("Q4----------------------------------------------------------------------");
-		System.out.println();
+		System.out.println("\r\nQ4----------------------------------------------------------------------\r\n");
 		multi(2.14, 43.55);
-		System.out.println();
 		
-		// Q5 呼び出し
-		System.out.println("Q5----------------------------------------------------------------------");
-		System.out.println();
-		intNum(5);
-		System.out.println();
+		// Q5 呼び出し、戻り値を変数に代入(変数は Q6呼び出し時に使用する)
+		System.out.println("\r\nQ5----------------------------------------------------------------------\r\n");
+		int[] newArray = intNum(5);
 		
-		// Q6 呼び出し
-		System.out.println("Q6----------------------------------------------------------------------");
-		System.out.println();
-		aveNum();
-		System.out.println();
+		// Q6 呼び出し、戻り値を変数に代入(変数は Q7呼び出し時に使用する)
+		System.out.println("\r\nQ6----------------------------------------------------------------------\r\n");
+		double average = aveNum(newArray);
 		
 		// Q7 呼び出し
-		System.out.println("Q7----------------------------------------------------------------------");
-		System.out.println();
-		boo();
+		System.out.println("\r\nQ7----------------------------------------------------------------------\r\n");
+		boo(average);
 	}
 }
