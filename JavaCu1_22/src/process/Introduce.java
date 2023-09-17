@@ -31,6 +31,6 @@ public class Introduce {
 				
 		//フォーマットを変更する
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd H:m:s");
-		System.out.println(sdf.format(cl.getTime()) + "です");
+		System.out.println("今の現在日時は" + sdf.format(cl.getTime()) + "です");
 	}
 }

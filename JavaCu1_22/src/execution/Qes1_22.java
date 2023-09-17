@@ -8,7 +8,7 @@ public class Qes1_22 {
 		// インスタンスの生成(引数として指定の値を渡す)
 		Introduce sushi = new Introduce("日本", "寿司", "和食");
 		
-		// メソッドの呼び出し
+		// メソッドの呼び出しをする
 		sushi.hello();
 		sushi.date();
 	}
