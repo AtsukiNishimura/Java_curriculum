@@ -44,6 +44,6 @@ public class Qes1_25 {
 				break;
 			}
 		}
-		
+		scan.close();
 	}
 }

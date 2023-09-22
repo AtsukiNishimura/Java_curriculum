@@ -26,7 +26,6 @@ public class Person {
 			this.difence = difence;
 		}
 		
-	
 	// ゲッターメソッドの作成
 	public String getName() {
 		return this.name;
