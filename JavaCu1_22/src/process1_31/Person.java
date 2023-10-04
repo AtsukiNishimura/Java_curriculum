@@ -7,7 +7,7 @@ public class Person {
 		public double weight;
 	
 	// クラスフィールドの作成
-	public static int count;
+	public static int count = 0;
 
 	public Person(String name, int age, double height, double weight){
 		this.name = name;
