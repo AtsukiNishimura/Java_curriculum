@@ -25,6 +25,6 @@ public class Person{
 	
 	// printメソッドの作成(BMIは四捨五入して出力する)
 	public void print() {
-		System.out.println("名前は" + this.name + "です\r\n年は" + this.age + "です\r\nBMIは" + Math.round(this.bmi()) + "です");
+		System.out.println("名前は" + this.name + "です\r\n年は" + this.age + "です\r\nBMIは" + Math.floor(this.bmi()) + "です");
 	}
 }

@@ -16,4 +16,4 @@ class Main {
 	    // 人数の出力
 	    System.out.println("人数は" + Person.count + "人です");
 	  }
-	}
+	} 
