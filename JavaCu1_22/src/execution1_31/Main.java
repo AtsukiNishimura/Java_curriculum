@@ -11,7 +11,7 @@ public class Main {
 		person2.print();
 		// 人数の出力
 	    System.out.println("\r\n合計" + Person.count + "人です\r\n");
-	    // クラスメソッド「printCount」の呼び出し
+	    // クラスメソッドの呼び出し
 	    Person.printCount();
 	}
 }
