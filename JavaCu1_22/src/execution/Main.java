@@ -1,6 +1,6 @@
 package execution;
 
-import process.Person;
+import newProcess.Person;
 
 class Main {
 	  public static void main(String[] args) {
